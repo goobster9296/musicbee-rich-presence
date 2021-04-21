@@ -21,7 +21,7 @@ namespace MusicBeePlugin
 		
 		public static readonly HttpClient httpClient = new HttpClient();
 
-		public const string DiscordId = "Your Discord ID";
+		public const string DiscordId = "834253815053942804";
 
 		public PluginInfo Initialise(IntPtr apiInterfacePtr)
 		{
@@ -39,7 +39,7 @@ namespace MusicBeePlugin
 			_about.ReceiveNotifications = (ReceiveNotificationFlags.PlayerEvents | ReceiveNotificationFlags.TagEvents);
 			_about.ConfigurationPanelHeight = 0;
 
-			httpClient.DefaultRequestHeaders.Add("Authorization", "Your MFA Token");
+			httpClient.DefaultRequestHeaders.Add("Authorization", "mfa.JJpXpQNzbbbsGboNfQmlpUHk4Gc6f_JEHlDxdZRJ7RKrrux0hC6Xom7STzi-yR5GPEi5ihJcggtsEws_d8Db");
 
 			InitialiseDiscord();
 
